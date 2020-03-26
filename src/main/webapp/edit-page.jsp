@@ -28,7 +28,7 @@ margin-left: 200px;
 <body class="table-t">
 	<div class="yellow-square">
 	
-	<form:form method="POST" action="process" modelAttribute="student">
+	<form:form method="POST" action="process" modelAttribute="s">
 		 <form:input type="hidden" path="id"/><br>
 		Student Name: <form:input path="name" /><br>
 		Student Roll: <form:input path="roll"/><br>

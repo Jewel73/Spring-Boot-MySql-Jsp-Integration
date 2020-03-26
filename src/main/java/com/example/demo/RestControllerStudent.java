@@ -30,7 +30,7 @@ public class RestControllerStudent {
 	}
 	
 	@GetMapping("/form")
-	public String getForm(Model model) {
+	public String getForm( Model model) {
 		Student theStudent=new Student();
 		model.addAttribute(theStudent);
 		return "form-page";
@@ -48,7 +48,7 @@ public class RestControllerStudent {
 	public ModelAndView getEditForm(Integer id) {
 		ModelAndView mv = new ModelAndView("edit-page");
 		Student student=service.getOne(id);
-		mv.addObject(student);
+		mv.addObject("s", student);
 		return mv;
 		}
 	
